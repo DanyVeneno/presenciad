@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presencia Digital | Webpack 2024</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="webpack">
+      <img
+        src="img/me.png"
+        alt="Daniel Vallejo"
+        class="body-image"
+        width="100%"
+        id="hello"
+        onClick="miPresentacion()"
+      />
+      <h6>Play</h6>
+      <audio id="saludoPresentacion">
+        <source src="audios/webpack.wav" type="audio/wav" />
+      </audio>
+    </div>
+    <picture>
+      <h1 data-scroll id="titulo" class="font-black text-2xl relative">
+        WEBPACK / 2024
+      </h1>
+      <p data-scroll class="rotateIn" id="info"></p>
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/portada.avif      1920w,
+          img/portada-1000.avif 1280w,
+          img/portada-700.avif   640w
+        "
+        type="image/avif"
+      />
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/portada.webp      1920w,
+          img/portada-1000.webp 1280w,
+          img/portada-700.webp   640w
+        "
+        type="image/webp"
+      />
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/portada.jpg      1920w,
+          img/portada-1000.jpg 1280w,
+          img/portada-700.jpg   640w
+        "
+        type="image/jpeg"
+      />
+      <img loading="lazy" data-scroll src="img/portada.jpg" alt="imagen" />
+    </picture>
+
+    <picture>
+      <a
+        href="https://presenciadigital.netlify.app"
+        target="_blank"
+        class="uppercase ... text-lime-400"
+        rel="noopener noreferrer"
+        ><h2 data-scroll>Click Single Web App</h2></a
+      >
+      <p data-scroll></p>
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/tarjeta.avif      1920w,
+          img/tarjeta-1000.avif 1280w,
+          img/tarjeta-700.avif   640w
+        "
+        type="image/avif"
+      />
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/tarjeta.webp      1920w,
+          img/tarjeta-1000.webp 1280w,
+          img/tarjeta-700.webp   640w
+        "
+        type="image/webp"
+      />
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/tarjeta.jpg      1920w,
+          img/tarjeta-1000.jpg 1280w,
+          img/tarjeta-700.jpg   640w
+        "
+        type="image/jpeg"
+      />
+      <img loading="lazy" data-scroll src="img/tarjeta.jpg" alt="imagen" />
+    </picture>
+
+    <picture>
+      <a
+        href="https://dannyveneno.tech"
+        target="_blank"
+        id="consulta"
+        class="uppercase ... text-lime-400"
+        rel="noopener noreferrer"
+        ><h1 data-scroll>Click si tienes dudas</h1></a
+      >
+      <div id="ecosistemaVentajas">
+        <img
+          src="img/me.png"
+          alt="Daniel Vallejo"
+          class="body-image"
+          width="100%"
+          id="valores"
+          onClick="ventajas()"
+        />
+        <h6>Play</h6>
+        <audio id="ecosistemaValores">
+          <source src="audios/beneficios.wav" type="audio/wav" />
+        </audio>
+        <a href="https://yehiibhii.store" target="_blank" id="comprar"
+          >Comprar paquete</a
+        >
+      </div>
+      <h6 data-scroll id="ecosistema">Beneficios de un Ecosistema</h6>
+      <p data-scroll id="beneficios" class="sm-[16px]text"></p>
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/contacto.avif      1920w,
+          img/contacto-1000.avif 1280w,
+          img/contacto-700.avif   640w
+        "
+        type="image/avif"
+      />
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/contacto.webp      1920w,
+          img/contacto-1000.webp 1280w,
+          img/contacto-700.webp   640w
+        "
+        type="image/webp"
+      />
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          img/contacto.jpg      1920w,
+          img/contacto-1000.jpg 1280w,
+          img/contacto-700.jpg   640w
+        "
+        type="image/jpeg"
+      />
+      <img loading="lazy" data-scroll src="img/contacto.jpg" alt="imagen" />
+    </picture>
+
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/beneficios.js"></script>
+  </body>
+</html>
